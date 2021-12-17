@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Cliente",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 29529
+        }
+      ],
+      "UpstreamPathTemplate": "/Cliente",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Catalogo",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 58149
+        }
+      ],
+      "UpstreamPathTemplate": "/Catalogo",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+  ]
+}
