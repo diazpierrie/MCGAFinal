@@ -19,7 +19,7 @@ namespace APIClientes.Controllers
         public IEnumerable<Cliente> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new Cliente
+            return Enumerable.Range(1, 5).Select(_ => new Cliente
                 {
                     Nombre = Nombres[rng.Next(Nombres.Length)],
                     Edad = rng.Next(18, 70)

@@ -23,7 +23,7 @@ namespace APICatalogo.Controllers
         public IEnumerable<Catalogo> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new Catalogo
+            return Enumerable.Range(1, 5).Select(_ => new Catalogo
                 {
                     Nombre = Nombres[rng.Next(Nombres.Length)],
                     Talle = Talles[rng.Next(Talles.Length)],
